@@ -4,4 +4,4 @@ from .models import *
 class ItemInfoForms(forms.ModelForm):
     class Meta:
         model= ItemInfo
-        filter = "__all__"
+        fields = "__all__"

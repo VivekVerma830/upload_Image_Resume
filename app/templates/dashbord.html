@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="row">
+    {% for i in data %}
+    <div class="col-md-4">
+    <form action="" method="post">
+    {{data}}
+    
+    Name={{i.item_name}}
+    desc={{i.item_desc}}
+    Price={{i.item_price}}
+    <img src="{{i.item_image.url}}" style="width: 18rem; height: 20rem;" alt="">
+    <a href="{{i.item_resume.url}}"></a>
+
+    <button class="btn btn-primary">Add to cart</button>
+
+    </form>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
